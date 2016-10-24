@@ -1,30 +1,15 @@
-// function Player() {
-// }
-// Player.prototype.play = function(song) {
-//   this.currentlyPlayingSong = song;
-//   this.isPlaying = true;
-// };
-//
-// Player.prototype.pause = function() {
-//   this.isPlaying = false;
-// };
-//
-// Player.prototype.resume = function() {
-//   if (this.isPlaying) {
-//     throw new Error("song is already playing");
-//   }
-//
-//   this.isPlaying = true;
-// };
-//
-// Player.prototype.makeFavorite = function() {
-//   this.currentlyPlayingSong.persistFavoriteStatus(true);
-// };
-// 
-// function Song() {
-// }
-//
-// Song.prototype.persistFavoriteStatus = function(value) {
-//   // something complicated
-//   throw new Error("not yet implemented");
-// };
+
+var FizzBuzz = function(){};
+
+FizzBuzz.prototype.says = function(number) {
+  if (this.isDivisibleByThree(number)) {
+    return "Fizz";
+  }
+  if (this.isDivisibleByFive(number)) {
+    return "Fizz";
+  }
+  if (this.isDivisibleByFifteen(number)) {
+    return "FizzBuzz";
+  }
+  return number
+};
