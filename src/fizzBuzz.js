@@ -1,15 +1,32 @@
+function Fizzbuzz() {
+};
+ Fizzbuzz.prototype.isDivisibleByThree = function(number) {
+    if (number % 3 === 0) {
+     return true;
+  }
+ };
 
-var FizzBuzz = function(){};
+ Fizzbuzz.prototype.isDivisibleByFive = function(number) {
+   if (number % 5 === 0) {
+     return true;
+   }
+ };
 
-FizzBuzz.prototype.says = function(number) {
+ Fizzbuzz.prototype.isDivisibleByFifteen = function(number) {
+   if (number % 15 === 0) {
+     return true;
+   }
+ };
+
+Fizzbuzz.prototype.says = function(number) {
+  if (this.isDivisibleByFifteen(number)) {
+    return "FizzBuzz"
+  }
   if (this.isDivisibleByThree(number)) {
-    return "Fizz";
+      return "Fizz";
   }
   if (this.isDivisibleByFive(number)) {
-    return "Fizz";
+    return "Buzz"
   }
-  if (this.isDivisibleByFifteen(number)) {
-    return "FizzBuzz";
-  }
-  return number
+  return number;
 };
