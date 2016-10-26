@@ -20,3 +20,7 @@ Fizzbuzz.prototype.says = function(number) {
   }
   return number;
 };
+
+// for (var i = 1; i <= 100; i++) {
+//   console.log(fizzBuzz.play(15));
+// }
